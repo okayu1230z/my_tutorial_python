@@ -3,6 +3,7 @@
 def main():
   try:
     print("")
+    import tmp
     # ここにコードを記述してIdentationErrorをキャッチしてください。
   except IndentationError as ie:
     print("IndentationErrorの例外をキャッチしました。おめでとう！")

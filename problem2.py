@@ -16,6 +16,8 @@ class MyCsvReader:
     print('__enter__')
     self.file_obj = open(self.file_name, 'r')
     col_number = []
+    for row in self.file_obj:
+      col_number.append(len(row.split(',')))
     # ここに処理を追加して処理を実現させる
     return col_number
 
